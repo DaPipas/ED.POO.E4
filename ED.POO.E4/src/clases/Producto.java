@@ -1,7 +1,7 @@
 
 package clases;
 
-public abstract class Producto {
+public class Producto {
     protected String nombre;
     protected float precio;
 
@@ -32,6 +32,11 @@ public abstract class Producto {
     @Override
     public String toString() {
         return "Producto{" + "nombre=" + nombre + ", precio=" + precio + '}';
+    }
+    
+    public float calcular(int numero){
+        float total = numero * precio;
+        return total;
     }
     
     
